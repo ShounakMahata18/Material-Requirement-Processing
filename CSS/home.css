@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+:root {
+    --primary-color: #32a1f6;
+    --secondary-color: #ffffff;
+    --background-color: #f2f9fe;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 80%;
+    height: 80px;
+    padding: 0 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+header h1{
+    font-size: 30px;
+}
+
+#right-nav ul{
+    list-style: none;
+    display: flex;
+}
+
+#right-nav ul li{
+    margin-left: 20px;
+}
+#right-nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#home{
+    width: 80vw;
+    margin: auto;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-image: url(../image/logesticsbg.jpg); */
+    /* background-position: center; */
+    /* background-size: cover; */
+}
+
+#home #left-home{
+    width: 500px;
+}
+
+#home #left-home h2{
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#home #left-home p{
+    font-size: 17px;
+}
+
+#home #right-home{
+    width: 500px;
+}
+#right-home img{
+    width: 500px;
+}
+
+#about{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about #left-about{
+    position: relative;
+    width: 500px;
+} 
+
+#about #left-about img{
+    width: 100%;
+}
+
+#about #right-about{
+    width: 500px; 
+}
+
+#about #right-about h2{ 
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+#about #right-about p{ 
+    font-size: 17px;
+}
+
+#contact-us{
+    width: 80vw;
+    margin: auto;
+    height: 25vh;
+}
+
+#dev{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-us h4{
+    font-size: 25px;
+    margin-bottom: 10vh;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#contact-us h4::after{
+    content: '';
+    width: 30px;
+    height: 50px;
+    background-color: var(--primary-color);
+}
+
+#dev1 h5,#dev2 h5{
+    font-size: 17px;
+
+}

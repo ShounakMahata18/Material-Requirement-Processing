@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --theme-color: rgb(52, 121, 246);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dddddd20;
+    position: relative;
+}
+
+header{
+    height: 50px;
+    padding: 15px 0px;
+    text-align: center;
+    background-color: var(--theme-color);
+    color: white;
+}
+
+header h1{
+    font-size: 20px;
+    font-weight: 100;
+}
+header h2{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#MRP{
+    width: 600px;
+    height: 200px;
+    padding: 30px 0px 0px 10%;
+    font-size: 17px;
+}
+
+#MRP h3{
+    color: var(--theme-color);
+    margin-bottom: 10px;
+}
+
+th{
+    font-size: 12px;
+}
+
+tr{
+    font-size: 13px;
+    height: 20px;
+}
+
+#MRP table{
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+#MRP table th, td {
+    text-align: center;
+    padding: 8px 0px;
+    width: 80px;
+}
+
+#MRP table tr:nth-child(even) {
+    background: #ffffff;
+}
+
+#MRP table th{
+    background-color: var(--theme-color);
+    color: white;
+}
+
+#MRP table td{
+    text-align: center;
+}
+
+/* FOR PRODACT DEMAND TABLE */
+
+#PD{
+    width: calc(80px * 5);
+    padding: 30px 0px 0px 10%;
+    font-size: 17px;
+    height: 400px;
+}
+
+#PD h3{
+    color: var(--theme-color);
+}
+
+#PD table{
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+#PD table th, td {
+    text-align: center;
+    padding: 8px 0px;
+    width: 80px;
+}
+
+#PD table tr:nth-child(even) {
+    background: #ffffff;
+}
+
+#PD table th{
+    background-color: var(--theme-color);
+    color: white;
+}
+
+#PD table td{
+    text-align: center;
+}
+
+/*SCROLL FEATURE*/
+
+#scroll table{
+    margin-top: 0px;
+}
+#scroll table tr td{
+    padding: 8px 0px;
+    width: 80px;
+}
+
+#scroll{
+    height: calc(400px - 76.4px);
+    overflow-y: scroll;
+}
+
+#scroll::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /*Firefox */
+}
+
+#ORDER{
+    position: absolute;
+    top: 110px;
+    right: 10%;
+    width: 400px;
+    text-align: start;
+}
+
+#ORDER h3{
+    color: var(--theme-color);
+    margin-bottom: 10px;
+}
+
+#ORDER form table{
+    width: 100%;
+}
+
+#ORDER form table th,td{
+    text-align: start;
+}
+
+#ORDER form table td input,select{
+    width: 100%;
+}
+
+#ORDER form table td input[type="submit"]{
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    margin-left: calc((400px - 60px) / 2);
+    margin-top: 10px;
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#ORDER form table tr:nth-child(even) td{
+    padding: 0px;
+}
+#ORDER form table tr:nth-child(odd){
+    margin-top: 10px;
+}
+
+/* SHOW BILL */
+
+#ShowBill{
+    position: absolute;
+    right: 10%;
+    top: calc(100% - 350px);
+    width: 400px;
+    height: 300px;
+    border: 1px solid var(--theme-color);
+    border-radius: 5%;
+    padding: 20px;
+}
+
+#ShowBill h4{
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    top: 0px;
+    left: calc((400px - 60px) / 2);
+}
+
+#ShowBill #serial{
+    position: absolute;
+    top: 6px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#ShowBill #date{
+    position: absolute;
+    top: 6px;
+    right: 60px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#ShowBill table{
+    width: 400px;
+    margin-top: 25px;
+}
+
+
+#ShowBill table td{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#ShowBill table tr td:nth-child(2){
+    text-align: center;
+}
+#ShowBill table tr td:nth-child(3){
+    text-align: center;
+}
+
+#ShowBill input{
+    height: 25px;
+    width: 100px;
+    margin-top: 20px;
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-left: calc((400px - 100px) / 2);
+    cursor: pointer;
+}

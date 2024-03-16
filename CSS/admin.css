@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary-color: #32a1f6;
+    --secondary-color: #ffffff;
+    --background-color: #f2f9fe;
+}
+
+header{
+    width: 80%;
+    height: 80px;
+    padding: 0 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    z-index: 10;
+}
+
+header h1{
+    font-size: 30px;
+}
+
+#right-nav ul{
+    list-style: none;
+    display: flex;
+}
+
+#right-nav ul li{
+    margin-left: 20px;
+}
+#right-nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#MRP{
+    width: 800px;
+    height: 200px;
+    font-size: 17px;
+}
+
+#MRP h3{
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 23px;
+    margin: 30px 0 20px 0;
+    text-align: center ;
+    font-weight: 700;
+}
+
+th{
+    font-size: 12px;
+}
+
+tr{
+    font-size: 13px;
+    height: 20px;
+}
+
+#MRP table{
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+#MRP table th, td {
+    text-align: center;
+    padding: 8px 0px;
+    width: calc(800px / 7);
+}
+
+#MRP table tr:nth-child(even) {
+    background: var(--secondary-color);
+}
+
+#MRP table th{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#MRP table td{
+    text-align: center;
+}
+
+#PD{
+    width: 800px;
+    font-size: 17px;
+    height: 400px;
+    margin-top: 80px;
+}
+
+#PD h3{
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+#PD table{
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+#PD table th, td {
+    text-align: center;
+    padding: 8px 0px;
+    width: calc(800px / 5);
+}
+
+#PD table tr:nth-child(even) {
+    background: var(--background-color);
+}
+
+#PD table th{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#PD table td{
+    text-align: center;
+}
+
+#scroll table{
+    margin-top: 0px;
+}
+#scroll table tr td{
+    padding: 8px 0px;
+    width: calc(800px / 5);
+}
+
+#scroll{
+    height: 312px;
+    overflow-y: scroll;
+}
+
+#scroll::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /*Firefox */
+}
+
+#bill{
+    position: absolute;
+    top: 14vh;
+    height: calc(80vh - 40px);
+    width: calc(80vw - 40px);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: block;
+}
+
+
+#bill h4{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#bill #serial{
+    position: absolute;
+    top: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+#bill #date{
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+#bill svg{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#bill table{
+    width: 100%;
+    margin-top: 70px;
+    border-spacing: 0 10px;
+}
+
+#bill table td{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#bill table tr td:nth-child(2){
+    text-align: center;
+}
+#bill table tr td:nth-child(3){
+    text-align: center;
+}
+
+#bill input{
+    height: 25px;
+    width: 100px;  
+    position: absolute;
+    bottom: 50px;
+    left: calc((80vw - 100px) / 2);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+/*
+*/

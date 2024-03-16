@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary-color: #32a1f6;
+    --secondary-color: #ffffff;
+    --background-color: #f2f9fe;
+}
+
+header{
+    width: 80%;
+    height: 80px;
+    padding: 0 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    z-index: 10;
+}
+
+header h1{
+    font-size: 30px;
+}
+
+#right-nav ul{
+    list-style: none;
+    display: flex;
+}
+
+#right-nav ul li{
+    margin-left: 20px;
+}
+#right-nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#content{
+    width: 80vw;
+    height: calc(100vh - 80px);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#user-details{
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-details svg{
+    fill: var(--primary-color);
+    width: 400px;
+    height: 400px;
+}
+
+#user-details span{
+    fill: var(--primary-color);
+    font-size: 27px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#order{
+    height: 400px;
+    width: 340px;
+    text-align: start;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+#order h3{
+    color: var(--primary-color);
+    margin: 20px 0 50px 0;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+#order form table{
+    width: 100%;
+    height: 200px;
+}
+
+#order form table th,td{
+    text-align: start;
+}
+
+#order form table td input,select{
+    width: calc(100% - 40px);
+}
+
+#order form table td input[type="submit"]{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    margin-left: calc((340px - 80px) / 2);
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#order form table tr:nth-child(odd) td{
+    color: var(--primary-color);
+}
+#order form table tr:nth-child(even) td input, select{
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 15px;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+#order form table tr:nth-child(even) td input::placeholder{
+    color: var(--primary-color);
+}
+
+#order form table tr:nth-child(4) td select{
+    width: 100%;
+}
