@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meterial Requirement Prcessing</title>
+    <title>Material Requirement Processing</title>
     <link rel="stylesheet" href="CSS/home.css">
 </head>
 <body>
     <header>
-        <h1>Meterial Requirement Prcessing</h1>
+        <h1>Material Requirement Processing</h1>
         <div id="right-nav">
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact-us">CONTACT US</a></li>
-                <li><a href="login.php">LOGIN</a></li>
+                <li><a href="user/login.php">LOGIN</a></li>
             </ul>
         </div>
     </header>
     <div id="home">
         <div id="left-home">
-            <h2>Meterial Requirement Prcessing</h2>
+            <h2>Material Requirement Processing</h2>
             <p>Material requirements planning (MRP) is a method used to manage and plan for the materials needed in manufacturing processes. It involves calculating the quantities of materials required for production based on the production schedule and desired inventory levels. MRP helps ensure that materials are available when needed, minimizing shortages and excess inventory. It also helps in managing the procurement process by determining when and how much to order.</p>
         </div>
         <div id="right-home">   
@@ -33,20 +33,30 @@
         </div>
         <div id="right-about">   
             <h2>Furniture Manufacture</h2>
-            <p>Here We are taking table and chair as the order product, according to the ordered product user can show the raw material needed to delhiver their product.</p>
+            <p>Here We are taking table and chair as the order product, according to the ordered product user can show the raw material needed to deliver their product.</p>
         </div>
     </div>
     <div id="contact-us">
+        <h4>Login As: </h4>
+        <div id="dev">
+                <a href="factory/login.php"><button class="btn">
+                    Admin Login
+                </button></a>
+            <a href="vendor/login.php"><button class="btn">
+                    Vendors Login
+                </button></a>
+        </div>
+    <div id="contact-us" style="margin-top:4rem;">
         <h4>Contact Us</h4>
         <div id="dev">
 
             <div id="dev1">
-                <h5>Shounak Mahata</h5>
-                <p>shounakmahata18@gmail.com</p>
-            </div>
-            <div id="dev2">
                 <h5>Senjuti Saha</h5>
                 <p>sahasenjuti796@gmail.com</p>
+            </div>
+            <div id="dev2">
+            <h5>Shounak Mahata</h5>
+                <p>shounakmahata18@gmail.com</p>
             </div>
         </div>
     </div>

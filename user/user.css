@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 100vh;
+    padding: 40px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.orders{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    padding: 20px;
+    border-radius: 8px;
+    flex-direction: column;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.277);
+}
+h2{
+    color: rgb(71, 138, 201);
+}

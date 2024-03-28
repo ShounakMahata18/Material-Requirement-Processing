@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 100vh;
+    padding: 40px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.orders{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+.wrapper, .tender{
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.277);
+    border: none;
+}
+.tenders{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.form input{
+    padding: 5px;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+h2{
+    color: rgb(75, 146, 212);
+}

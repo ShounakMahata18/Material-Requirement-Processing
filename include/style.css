@@ -1,0 +1,34 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.disabled{
+    pointer-events: none;
+}
+.tender{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid black;
+    width: max-content;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.form input{
+    padding: 5px;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
